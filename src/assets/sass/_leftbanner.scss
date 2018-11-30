@@ -1,0 +1,50 @@
+﻿.left-banner {
+  height: auto;
+  background-color: $sunflower-yellow;
+  border-top-left-radius: 42.5px;
+  border-bottom-left-radius: 42.5px;
+}
+
+.customer {
+  width: 238px;
+  height: 238px;
+  margin: 0px auto;
+  margin-top: 161px;
+  margin-bottom: 117px;
+}
+.customer__image {
+  object-fit: contain;
+  content: url(../images/profilepic.svg);
+}
+
+.expand {
+  width: 64px;
+  height: 64px;
+  margin: 0px auto;
+  margin-bottom: 120px;
+}
+
+.collapse__image {
+  transform: rotate(180deg);
+}
+
+/*mobile view*/
+@media only screen and (max-width: 768px) {
+  .left-banner {
+    height: auto;
+    max-height:100vh;
+    background-color: $sunflower-yellow;
+    border-radius: 0px;
+  }
+  .expand {
+    width: 64px;
+    height: 64px;
+    margin: 0px auto;
+    margin-bottom: 120px;
+    transform: rotate(90deg);
+  }
+
+  .collapse__image {
+    transform: rotate(180deg);
+  }
+}

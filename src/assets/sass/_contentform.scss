@@ -1,0 +1,19 @@
+﻿.content {
+  display: none;
+  height: auto;
+  background-color: $tangerine;
+  border-top-right-radius: 42.5px;
+  border-bottom-right-radius: 42.5px;
+  padding: 111px;
+}
+
+/*mobile view*/
+@media only screen and (max-width: 768px) {
+  .content {
+    display: none;
+    height: auto;
+    background-color: $tangerine;
+    border-radius: 0px;
+    padding: 111px;
+  }
+}

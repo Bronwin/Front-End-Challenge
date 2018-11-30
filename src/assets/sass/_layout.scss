@@ -1,0 +1,126 @@
+﻿.container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 100%;
+  min-height: 98vh;
+  border-radius: 42.5px;
+  box-shadow: 0px 0px 10px #cdcdcd;
+}
+
+.container-item {
+  background-color: #444;
+}
+
+.container__active {
+  display: block !important;
+  -webkit-animation: slideout 0.25s forwards;
+  animation: slideout 0.25s forwards;
+}
+
+.container__inactive {
+  -webkit-animation: slidein 0.25s backwards;
+  animation: slidein 0.25s backwards;
+}
+
+@-webkit-keyframes slideout {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: auto;
+    
+  }
+}
+
+@keyframes slideout {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: auto;
+  }
+}
+
+@-webkit-keyframes slidein {
+  from {
+    width: auto;
+  }
+
+  to {
+    width: 0%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    width: auto;
+  }
+
+  to {
+    width: 0%;
+  }
+}
+
+/*mobile view*/
+@media only screen and (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100vh;
+    min-height: 98vh;
+    border-radius: 42.5px;
+    box-shadow: 0px 0px 10px #cdcdcd;
+  }
+  .container__active {
+    display: block !important;
+    -webkit-animation: slidedown 0.25s forwards;
+    animation: slidedown 0.25s forwards;
+  }
+
+  .container__inactive {
+    display: none !important;
+    -webkit-animation: slideup 0.25s backwards;
+    animation: slideup 0.25s backwards;
+  }
+  @-webkit-keyframes slidedown {
+    from {
+      height: 0%;
+    }
+
+    to {
+      height: auto;
+    }
+  }
+
+  @keyframes slidedown {
+    from {
+      height: 0%;
+    }
+
+    to {
+      height: auto;
+    }
+  }
+
+  @-webkit-keyframes slideup {
+    from {
+      height: auto;
+    }
+
+    to {
+      display: none;
+    }
+  }
+
+  @keyframes slideup {
+    from {
+      height: auto;
+    }
+
+    to {
+      display:none;
+    }
+  }
+}

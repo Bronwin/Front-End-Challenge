@@ -1,0 +1,90 @@
+﻿body {
+  font-family: $font;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $cloudy-blue;
+}
+h1 {
+  display:block;
+  height: 43px;
+  font-family: $font;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $black;
+}
+
+h2 {
+  height: 55.3px;
+  font-family: $font;
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.26;
+  letter-spacing: normal;
+  text-align: center;
+  color: $black;
+}
+
+label {
+  font-family: $font;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $charcoal-grey;
+}
+input[type=text], input[type=date] {
+  font-family: $font;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $cloudy-blue-two;
+}
+a.radio {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $cloudy-blue-two;
+}
+button {
+  font-family: $font;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $charcoal-grey;
+}
+p {
+  font-family: $font;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 27.6px;
+  text-align: justify;
+  color: $black;
+}

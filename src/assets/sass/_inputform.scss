@@ -1,0 +1,183 @@
+﻿.input-form {
+  height: auto;
+  background-color: #fff;
+  border-top-right-radius: 42.5px;
+  border-bottom-right-radius: 42.5px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 16px;
+  padding:111px;
+}
+
+label {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height: 17.5px;
+  display: table-cell;
+  vertical-align: middle;
+  align-self:center;
+}
+.input-container {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  height: 53px;
+}
+input[type=text], input[type=date] {
+  border: 1px solid $pale-grey;
+  border-radius: 5.3px;
+  background-color: $pale-grey;
+  width: 100%;
+  height: 100%;
+  padding: 0px 20px;
+  box-sizing:border-box;
+}
+input[type=text]:hover, input[type=date]:hover {
+  border-radius: 5.3px;
+}
+
+.input-date-icon {
+  width: 20px;
+  height: 20px;
+  background-image: url("/src/assets/images/calendar.svg");
+  position: absolute;
+  right:130px;
+  left:auto;
+  margin-top:16px;
+}
+.input-radio{
+  width:30%;
+  display:inline-block;
+  margin:10px 0px 0px 10px;
+}
+a.input-radio img {
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: $pale-grey;
+  width: 50px;
+  height: 50px;
+  object-fit: none;
+}
+
+//radio hover
+a.input-radio img:hover {
+  background-color: $cloudy-blue-two;
+}
+a.input-radio img.input-radio__membership:hover {
+  content: url("/src/assets/images/card-hover.svg");
+}
+a.input-radio img.input-radio__gendermale:hover {
+  content: url("/src/assets/images/male-hover.svg");
+}
+a.input-radio img.input-radio__genderfemale:hover {
+  content: url("/src/assets/images/female-hover.svg");
+}
+//radio active
+a.input-radio img.input-radio__membership.active {
+  background-color: $cloudy-blue-two;
+  content: url("/src/assets/images/card-hover.svg");
+}
+a.input-radio img.input-radio__gendermale.active {
+  background-color: $cloudy-blue-two;
+  content: url("/src/assets/images/male-hover.svg");
+}
+a.input-radio img.input-radio__genderfemale.active {
+  background-color: $cloudy-blue-two;
+  content: url("/src/assets/images/female-hover.svg");
+}
+input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.button-row {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: right;
+}
+button {
+  width: 158.7px;
+  height: 53px;
+  margin-left:16px;
+  border-radius: 5.3px;
+  border:none;
+  text-transform:uppercase;
+}
+button:hover{
+  cursor:pointer;
+}
+
+.button__primary {
+  background-color: $tiffany-blue;
+}
+.button__secondary {
+  background-color: $pale-grey;
+}
+.align-right {
+  text-align: right;
+  width: 100%;
+  display: inline-block;
+}
+
+/*mobile view*/
+@media only screen and (max-width: 768px) {
+  .form {
+    display: block;
+    grid-template-columns: 100%;
+    grid-gap: 16px;
+    padding: 111px;
+  }
+
+  label {
+    height: 17.5px;
+    display: block;
+    vertical-align: middle;
+    margin-top: 15px;
+  }
+
+  .input-container {
+    display: block;
+    height: 53px;
+  }
+
+  button {
+    width: 100%;
+    height: 53px;
+    margin-left: 16px;
+    border-radius: 5.3px;
+    border: none;
+    text-transform: uppercase;
+  }
+}
+
+//valid
+.hide{
+  display:none;
+}
+label.invalid {
+  color: $tangerine;
+}
+input[type=text].invalid {
+  border-radius: 5.3px;
+  border-color: $tangerine;
+  color: $tangerine;
+}
+.invalid__dot {
+  height: 8px;
+  width: 8px;
+  background-color: $tangerine;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+}
+span.invalid {
+  display: inline-block !important;
+  color: $tangerine;
+}

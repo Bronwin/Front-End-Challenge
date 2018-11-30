@@ -1,0 +1,44 @@
+{
+  "name": "frontendchallenge",
+  "version": "1.0.0",
+  "description": "frontendchallenge",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "karma start test/karma.conf.js --single-run",
+    "clean": "rimraf dist",
+    "dev": "npm run clean && webpack --mode development",
+    "build": "npm run clean && webpack --mode production"
+  },
+  "keywords": [
+    "Front-end",
+    "Challenge",
+    "Bronwin"
+  ],
+  "author": "Cirrus Product Development",
+  "license": "ISC",
+  "devDependencies": {
+    "@vue/test-utils": "^1.0.0-beta.26",
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "css-loader": "^1.0.0",
+    "es6-promise": "^4.2.4",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jasmine": "^3.3.0",
+    "karma": "^3.1.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-webpack": "^3.0.5",
+    "node-sass": "^4.9.2",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.21.0",
+    "svg-url-loader": "^2.3.2",
+    "vue": "^2.5.17",
+    "vue-loader": "^15.2.6",
+    "vue-router": "^3.0.1",
+    "vue-style-loader": "^4.1.1",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0"
+  }
+}
