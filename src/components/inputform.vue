@@ -6,12 +6,12 @@
         <input type="text" v-model="form.name" />
       </div>
       <label>Gender</label>
-      <div class="input-container">
+      <div class="input-container height-auto">
         <a class="input-radio">
-          <img class="input-radio__gendermale" src="/src/assets/images/male.svg"  v-bind:class="{active: form.gender==='male'}" v-on:click="form.gender='male'"/>Male
+          <img class="input-radio__gendermale" v-bind:class="{active: form.gender==='male'}" v-on:click="form.gender='male'" />Male
         </a>
         <a class="input-radio">
-          <img class="input-radio__genderfemale" src="/src/assets/images/female.svg" v-bind:class="{active: form.gender==='female'}" v-on:click="form.gender='female'" />Female
+          <img class="input-radio__genderfemale" v-bind:class="{active: form.gender==='female'}" v-on:click="form.gender='female'" />Female
         </a>
       </div>
       <label>Date of Birth</label>
@@ -33,15 +33,15 @@
         <input type="text" v-model="form.customerID"/>
       </div>
       <label>Membership</label>
-      <div class="input-container">
+      <div class="input-container height-auto">
         <a class="input-radio">
-          <img class="input-radio__membership" src="/src/assets/images/card.svg" v-bind:class="{active: form.membership==='classic'}" v-on:click="form.membership='classic'" />Classic
+          <img class="input-radio__membership" v-bind:class="{active: form.membership==='classic'}" v-on:click="form.membership='classic'" />Classic
         </a>
         <a class="input-radio">
-          <img class="input-radio__membership" src="/src/assets/images/card.svg" v-bind:class="{active: form.membership==='silver'}" v-on:click="form.membership='silver'"/>Silver
+          <img class="input-radio__membership" v-bind:class="{active: form.membership==='silver'}" v-on:click="form.membership='silver'"/>Silver
         </a>
         <a class="input-radio">
-          <img class="input-radio__membership" src="/src/assets/images/card.svg" v-bind:class="{active: form.membership==='gold'}" v-on:click="form.membership='gold'"/>Gold
+          <img class="input-radio__membership" v-bind:class="{active: form.membership==='gold'}" v-on:click="form.membership='gold'"/>Gold
         </a>
       </div>
       <br />
