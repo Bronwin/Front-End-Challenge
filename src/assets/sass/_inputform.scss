@@ -41,11 +41,11 @@ input[type=text]:hover, input[type=date]:hover {
 .input-date-icon {
   width: 20px;
   height: 20px;
-  background-image: url("/src/assets/images/calendar.svg");
+  background-image: url(../images/calendar.svg);
   position: absolute;
-  right:130px;
-  left:auto;
-  margin-top:16px;
+  right: 130px;
+  left: auto;
+  margin-top: 16px;
 }
 .input-radio{
   width:30%;
@@ -63,31 +63,44 @@ a.input-radio img {
   object-fit: none;
 }
 
+//radio normal
+a.input-radio img.input-radio__membership {
+  content: url(../images/card.svg);
+}
+
+a.input-radio img.input-radio__gendermale {
+  content: url(../images/male.svg);
+}
+
+a.input-radio img.input-radio__genderfemale {
+  content: url(../images/female.svg);
+}
+
 //radio hover
 a.input-radio img:hover {
   background-color: $cloudy-blue-two;
 }
 a.input-radio img.input-radio__membership:hover {
-  content: url("/src/assets/images/card-hover.svg");
+  content: url(../images/card-hover.svg);
 }
 a.input-radio img.input-radio__gendermale:hover {
-  content: url("/src/assets/images/male-hover.svg");
+  content: url(../images/male-hover.svg);
 }
 a.input-radio img.input-radio__genderfemale:hover {
-  content: url("/src/assets/images/female-hover.svg");
+  content: url(../images/female-hover.svg);
 }
 //radio active
 a.input-radio img.input-radio__membership.active {
   background-color: $cloudy-blue-two;
-  content: url("/src/assets/images/card-hover.svg");
+  content: url(../images/card-hover.svg);
 }
 a.input-radio img.input-radio__gendermale.active {
   background-color: $cloudy-blue-two;
-  content: url("/src/assets/images/male-hover.svg");
+  content: url(../images/male-hover.svg);
 }
 a.input-radio img.input-radio__genderfemale.active {
   background-color: $cloudy-blue-two;
-  content: url("/src/assets/images/female-hover.svg");
+  content: url(../images/female-hover.svg);
 }
 input[type=radio] {
   position: absolute;

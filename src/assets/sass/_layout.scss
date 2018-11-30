@@ -62,7 +62,9 @@
     width: 0%;
   }
 }
-
+.height-auto {
+  height: auto;
+}
 /*mobile view*/
 @media only screen and (max-width: 768px) {
   .container {
@@ -83,6 +85,9 @@
     display: none !important;
     -webkit-animation: slideup 0.25s backwards;
     animation: slideup 0.25s backwards;
+  }
+  .height-auto{
+    height:auto !important;
   }
   @-webkit-keyframes slidedown {
     from {

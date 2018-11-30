@@ -23,7 +23,10 @@
   margin: 0px auto;
   margin-bottom: 120px;
 }
-
+.expand__image {
+  cursor:pointer;
+  content: url(../images/expand.svg);
+}
 .collapse__image {
   transform: rotate(180deg);
 }
