@@ -7,7 +7,7 @@
       <h1>Front-end challenge!</h1>
       <h2>This is a design that you will need to code up and impress us.</h2>
       <div class="expand">
-        <input type="image" v-bind:class="{collapse__image:contentIsActive}" v-bind:src="expandCollapseImg" v-on:click="toggleExpand()" />
+        <img class="expand__image" v-bind:class="{collapse__image:contentIsActive}" v-on:click="toggleExpand()" />
       </div>
     </div>
     <div class="container-item content" v-bind:class="{container__active:contentIsActive, container__inactive:!contentIsActive}">
@@ -26,7 +26,6 @@
     },
     data() {
       return {
-        expandCollapseImg: '/src/assets/images/expand.svg',
         contentIsActive: false
       }
     },
