@@ -14,7 +14,7 @@ module.exports = {
   entry: path.resolve(__dirname, 'src/main.js'),
   output: {
     path: path.join(__dirname, 'dist'),
-    publicPath: '/dist/',
+    publicPath: '',
     filename: '[name].[chunkhash].js'
   },
   resolve: {
